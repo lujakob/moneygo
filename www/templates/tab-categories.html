@@ -1,0 +1,12 @@
+<ion-view view-title="Categories">
+	<ion-nav-buttons side="right">
+		<button class="button button-stable ion-plus" ng-click="newCategory()"> Add</button>
+	</ion-nav-buttons>
+	<ion-content>
+		<ion-list>
+			<ion-item ng-repeat="category in categories" type="item-text-wrap">
+				<h2>{{category.title}}</h2>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

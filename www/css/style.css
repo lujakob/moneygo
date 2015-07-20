@@ -1,0 +1,11 @@
+/* Empty. Add your own CSS if you like */
+.item-category-title {
+	display:inline-block;
+	min-width:120px;
+}
+
+.item-category-amount {
+	display:inline-block;
+	text-align:right;
+	float:right;
+}
