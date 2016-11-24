@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Categories
+		<ion-icon name="add" (click)="addCategoryAlert()"></ion-icon>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+		<ion-item *ngFor="let category of categories">
+			{{category.title}}
+			<ion-icon name="trash" (click)="removeCategoryAlert(category)"></ion-icon>
+		</ion-item>
+	</ion-list>
+</ion-content>
