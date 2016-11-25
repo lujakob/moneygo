@@ -6,6 +6,7 @@ import {HomePage} from '../pages/home/home';
 import {TabsPage} from '../pages/tabs/tabs';
 
 import {CategoryService} from '../services/category.service';
+import {PeriodsService} from '../services/periods.service';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import {CategoryService} from '../services/category.service';
     ],
     providers: [
         {provide: ErrorHandler, useClass: IonicErrorHandler},
+        PeriodsService,
         CategoryService
     ]
 })

@@ -5,7 +5,7 @@
 </ion-header>
 
 <ion-content padding>
-	<ion-select [(ngModel)]="selectedPeriod">
+	<ion-select [(ngModel)]="selectedPeriod" (ionChange)="updatePeriod()">
 		<ion-option *ngFor="let period of periods" value="{{period.value}}">{{period.title}}</ion-option>
 	</ion-select>
 	<ion-list>

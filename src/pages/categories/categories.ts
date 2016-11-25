@@ -14,11 +14,10 @@ export class CategoriesPage {
     constructor(public navCtrl:NavController,
                 public alertCtrl: AlertController,
                 private categoryService:CategoryService) {
-
+        this.categories = this.categoryService.getCategories();
     }
 
     ionViewDidEnter() {
-        this.categories = this.categoryService.getCategories();
     }
 
     /**
